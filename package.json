@@ -1,0 +1,27 @@
+{
+  "name": "@zylos/shared-types",
+  "version": "1.0.0",
+  "description": "Shared TypeScript types for Zylos ERP/POS system",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": ["typescript", "types", "zylos", "erp", "pos"],
+  "author": "Zylos Team",
+  "license": "MIT",
+  "files": ["dist/**/*"],
+  "dependencies": {
+    "zod": "^4.3.5"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ronald-dev86/zylos-shared-types.git"
+  }
+}
